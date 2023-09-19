@@ -1,0 +1,75 @@
+﻿@page 
+@model WeatherService.Pages.OlaModel
+@{
+    ViewData["Title"] = "Home page";
+    var data = Model.MyWeatherData;
+}
+<div class="container text-center">
+    <h1 class="display-3">Cities in Portugal</h1>  
+</div>
+
+<br/>
+
+<div class="container">
+
+    <h2 class="display-5">Lisboa</h2>    
+    <ul>
+    <li>Country: @data.Country</li> 
+    <li>City: @data.City</li> 
+    <li>Icon:  <img src="@data.Icon" width="30" height="30"/> </li>
+    <li>Temp: @data.Temperature ºC</li>
+    <li>Lat: @data.Lat</li>
+    <li>Long: @data.Long</li>
+    <li>Last Updated: @data.LastUpdated </li>
+    </ul>
+    <img src="~/pictures/Lisboa2.jpg" width="400" height="280" />
+    <img src="~/pictures/Lisboa.jpg" width="400" height="280"/>
+    <img src="~/pictures/Lisboa3.jpg" width="400" height="280"/>
+    <br/>
+    <br/>
+    <a href="/Index1/Lisboa">learn more</a>
+</div>
+
+<br/>
+
+<div class="container">
+    
+    <h2 class="display-5">Porto</h2>
+    <ul>
+    <li>Country: @data.Country</li> 
+    <li>City: Porto</li> 
+    <li>Icon:  <img src="@data.Icon" width="30" height="30"/> </li>
+    <li>Temp: @data.Temperature ºC</li>
+    <li>Lat: @data.Lat</li>
+    <li>Long: @data.Long</li>
+    <li>Last Updated: @data.LastUpdated </li>
+    </ul>
+     <img src="~/pictures/Porto.jpg" width="400" height="280" />
+     <img src="~/pictures/Porto2.jpg" width="400" height="280" /> 
+     <img src="~/pictures/Porto3.jpg" width="400" height="280"/>
+     <br/>
+     <br/>
+     <a href="/Index1/Porto">learn more</a>
+</div>
+
+<br/>
+
+<div class="container">
+
+    <h2 class="display-5">Braga</h2>
+    <ul>
+    <li>Country: @data.Country</li> 
+    <li>City: Braga</li> 
+    <li>Icon:  <img src="@data.Icon" width="30" height="30"/> </li>
+    <li>Temp: @data.Temperature ºC</li>
+    <li>Lat: @data.Lat</li>
+    <li>Long: @data.Long</li>
+    <li>Last Updated: @data.LastUpdated </li>
+    </ul>
+     <img src="~/pictures/Braga1.jpg" width="400" height="280" />
+     <img src="~/pictures/Braga3.jpg" width="400" height="280"/> 
+     <img src="~/pictures/Braga2.jpg" width="400" height="280" /> 
+     <br/>
+     <br/>
+     <a href="/Index1/Braga">learn more</a> 
+</div>

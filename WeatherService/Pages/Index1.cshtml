@@ -1,0 +1,85 @@
+﻿@page "/index1/{city?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    var data = Model.MyWeatherData;
+}
+
+<div>
+    <h1 class="display-4">@data.City</h1>    
+</div>
+
+<ul>
+    <li>Country: @data.Country</li>
+    <li>City: @data.City</li> 
+    <li>Icon:  <img src="@data.Icon" width="30" height="30"/> </li>
+    <li>Temp: @data.Temperature ºC</li>
+    <li>Lat: @data.Lat</li>
+    <li>Long: @data.Long</li>
+    <li>Last Updated: @data.LastUpdated</li>
+    <div class="text-center">___________________________________________________________________________________________________________________________________________________________________________________________
+    </div>
+</ul>
+
+<br/>
+
+<section>
+
+<div style="float:left; margin-top: 10px; margin-left: 30px; margin-bottom:20px" >
+
+    <h6 class="display-6">Protugal</h6>
+    <ul>
+    <li><a href="/Index1/Lisboa">Lisboa</a></li>
+    <li><a href="/Index1/Braga Portugal">Braga</a></li>   
+    <li><a href="/Index1/Coimbra">Coimbra</a></li> 
+    <li><a href="/Index1/OPorto">Porto</a></li>
+    <li><a href="/Index1/Leiria">Leiria</a></li>    
+    <li><a href="/Index1/Algarve">Algarve</a></li> 
+    </ul>
+</div>
+<div style="float:left; margin-top: 10px; margin-left: 30px; margin-bottom:20px">
+    <img src="~/pictures/portugal.jpg" width="180" height="120" />
+</div>
+
+<div style="float:left; margin-top: 10px; margin-left: 25px; margin-bottom:20px">
+ <ul>
+    <h6 class="display-6">Brasil</h6>
+    <li><a href="/Index1/Brasília">Brasília</a></li>
+    <li><a href="/Index1/Recife">Recife</a></li>
+    <li><a href="/Index1/Rio de Janeiro">Rio de Janeiro</a></li>
+    <li><a href="/Index1/São Paulo">São Paulo</a></li>    
+    <li><a href="/Index1/Belo Horizonte">Belo Horizonte</a></li>    
+    <li><a href="/Index1/Florianópolis">Florianópolis</a></li>
+</ul>
+</div>
+<div style="float:left; margin-top: 10px; margin-left: 30px; margin-bottom:20px">
+    <img src="~/pictures/brasil.jfif" width="180" height="120" />
+</div>
+
+<div style="float:left; margin-top: 10px; margin-left: 25px; margin-bottom:20px">
+ <ul>
+    <h6 class="display-6">Espanha</h6>
+    <li><a href="/Index1/Madrid">Madrid</a></li>
+    <li><a href="/Index1/Barcelona">Barcelona</a></li>
+    <li><a href="/Index1/Sevilha">Sevilha</a></li>    
+    <li><a href="/Index1/Málaga">Málaga</a></li>    
+    <li><a href="/Index1/Valência">Valência</a></li>
+    <li><a href="/Index1/Salamanca">Salamanca</a></li>
+</ul>
+</div>
+<div style="float:left; margin-top: 10px; margin-left: 30px; margin-bottom:20px">
+    <img src="~/pictures/espanha.jpg" width="180" height="120" />
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+</section>
+
+
+
+
